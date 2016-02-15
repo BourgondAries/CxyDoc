@@ -2,7 +2,7 @@ Classes. You can grant classes.
 <pre>
 # Main.cxy
 enter():
-	obj = sub::Sub[String]()
+	obj = sub:Sub[String]()
 	obj.make()
 
 enter()

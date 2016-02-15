@@ -1,6 +1,6 @@
 Cxy is almost pseudo-code.
 <pre>
-dijkstra(graph source : dist prev):
+dijkstra(graph source):
 	q = Set()
 	dist = VertexMap()
 	prev = dist
@@ -20,6 +20,8 @@ dijkstra(graph source : dist prev):
 			if alt < dist[vertex]:
 				dist[vertex] = alt
 				prev[vertex] = u
+
+	return dist, prev
 
 </pre>
 

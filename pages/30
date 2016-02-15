@@ -4,13 +4,13 @@ When a variable is declared, it is empty. Only the type is set. You can manually
 # Main.cxy
 enter()
 enter():
-	a = sub::Sub(10)  # Invoke constructor, then copy-assignment
+	a = sub:Sub(10)  # Invoke constructor, then copy-assignment
 	b = a  # Invoke constructor, then copy-assignment
 	b = a  # Invoke copy-assignment
 
 	# Similar to the above, but impossible to express in the language
-	c  # of type sub::Sub
-	c.assign(sub::Sub(10))
+	c  # of type sub:Sub
+	c.assign(sub:Sub(10))
 
 </pre>
 <pre>

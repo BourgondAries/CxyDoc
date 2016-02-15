@@ -1,17 +1,18 @@
 Design.
 <pre>
 # Main.cxy
-askFor(in : out):
+askFor(in):
 	print(in)
-	out = scan()
+	return scan()
 
-sumAll(in : out):
+sumAll(in):
 	out = 0
 	for i = 0; i < in.getSize(); ++i:
 		out += in[i].getValue()
+	return out
 
 enter():
-	vector = Array[sub::Sub]()
+	vector = Array[sub:Sub]()
 	vector.reserve(5)
 	i = 0
 	while true:
@@ -19,23 +20,28 @@ enter():
 		if response == "y":
 			break
 		print("Here we go!")
-		vector.append(sub::Sub(i))
+		vector.append(sub:Sub(i))
 		++i
-	sumAll(vector)
-
+	print(sumAll(vector))
 
 enter()
 </pre>
 
 <pre>
 # sub/Sub.cxy
-i
+i = 0
+new(this, in):
+	this->i = in
+
 getValue(this : out):
 	out = this->i
 </pre>
 
-If you press 'y' twice.
+If you press 'y' twice:
 <pre>
+Do you want to quit? (y/n) (n):
+Here we go!
+Do you want to quit? (y/n) (n):
 1
 </pre>
 

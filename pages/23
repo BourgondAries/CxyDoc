@@ -2,7 +2,7 @@ Classes. You can only access classes directly in the folders under the current c
 <pre>
 # Main.cxy
 enter():
-	sub::Sub::make()
+	sub:Sub.make()
 
 enter()
 </pre>

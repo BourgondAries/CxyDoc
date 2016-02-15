@@ -2,7 +2,7 @@ Classes. Classes also support functions. They are called "methods".
 <pre>
 # Main.cxy
 enter():
-	vector = new sub::Sub(x=1, y=2)
+	vector = new sub:Sub(x=1, y=2)
 	vector->doSomething()
 	(@vector).doSomething()
 	type vector
@@ -13,16 +13,21 @@ enter()
 
 <pre>
 # sub/Sub.cxy
+new(this, x, y):
+	this->x = x
+	this->y = y
+
+del():
+	pass
+
 doSomething(this):
-	print(this.x)
-	print(this.y)
-x
-y
+	print(this->x)
+	print(this->y)
 </pre>
 
 The type of vector gives
 <pre>
-vector: ptr sub::Sub
+vector: ptr sub:Sub
 </pre>
 
 The code prints
@@ -30,3 +35,6 @@ The code prints
 1
 2
 </pre>
+
+
+Note that the destructor is called 'del' and the constructor is called 'new'. These are reuses of the new and del operators.

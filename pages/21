@@ -1,7 +1,7 @@
 Classes. Classes are simply the filenames. The constructor are the free statements of that file.
 <pre>
 if scan() == "y":
-	subobj = new[This]()
+	subobj = new This
 else:
 	subobj = null
 </pre>
