@@ -26,6 +26,8 @@
 			if (!isset($page))
 				$page = 0;
 
+			echo "<div id=\"navivalue\" hidden>$page</div>";
+
 			$page = intval($page);
 			echo generateNavibar($page);
 		?>
@@ -49,14 +51,18 @@
 		?>
 	</body>
 	<script>
+		function setSelects(value) {
+			selects = document.getElementsByTagName("select");
+			for (i = 0; i < selects.length; ++i) {
+				selects[i].selectedIndex = value;
+			}
+		}
+		setSelects(document.getElementById('navivalue').innerHTML);
 		function getPage(response, selected) {
 			document.open();
 			document.write(response);
 			document.close();
-			selects = document.getElementsByTagName("select");
-			for (i = 0; i < selects.length; ++i) {
-				selects[i].selectedIndex = selected;
-			}
+			setSelects(selected);
 		}
 		function httpGetAsyncPage(theUrl, callback) {
 			selected = theUrl;
