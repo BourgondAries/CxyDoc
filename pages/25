@@ -1,23 +1,15 @@
-Classes. You can grant classes.
+Classes. Classes are simply the filenames. The constructor are the free statements of that file.
 <pre>
-# Main.cxy
-enter():
-	obj = sub:Sub[String]()
-	obj.make()
-
-enter()
+subobj = null  # To put it in the outer scope
+if scan() == "y":
+	subobj = new This
+else:
+	subobj = null
 </pre>
 
+Press y two times and you end up with:
 <pre>
-# sub/Sub.cxy
-make():
-	i = In()
-	i.set("Hello!")
-	print(i)
+subobj -> subobj -> subobj -> null
 </pre>
 
-<pre>
-Hello!
-</pre>
-
-
+The compiler statically inferres the type of subojb (ptr This) so that you can assign null if needed.

@@ -1,10 +1,10 @@
-Functions.
-Functions support arguments.
+Variables.
+Variables can not <i>shadow</i> outer scopes
 <pre>
-doSomething(in):
-	print(in)
-
-doSomething(100)
+value = "string"
+scope:
+	value = 10  # Error! Overwriting a string-typed variable with an integer
+	print(value)
 </pre>
 
-The standard argument name for any function is 'in'.
+Look closely at this and the previous example and note the difference: value is declared <strong>before</strong> the scope, so it is included in the scope (it can be used in the scope). This clashes with the integer definition of value.

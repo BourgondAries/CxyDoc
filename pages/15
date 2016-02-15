@@ -1,20 +1,11 @@
-Breaktime. Find the nth fibonacci number, use 64-bit integers.
+Functions.
+Functions support multiple inputs, but they MUST be named when calling the function.
 <pre>
-fibonacci(in):
-	if in <= 0:
-		return 64s(0)
-	prev = [0 1]
-	out = 0
-	for i = 0; i < in; ++i:
-		out = prev[0] + prev[1]
-		prev[0] = prev[1]
-		prev[1] = out
-	return out
+doSomething(in, second):
+	in = in + 1
+	print(in + second)
 
-print(fibonacci(64s(10)))
+doSomething(100, second=50)
 </pre>
 
-Prints
-<pre>
-34
-</pre>
+Only 'in' does not need to be named. This is to make code more readable.

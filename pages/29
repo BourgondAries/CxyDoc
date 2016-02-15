@@ -1,13 +1,23 @@
-Constants. Constants are important. Using ':=' we can make a value constant in its scope. It can not be mutated.
+Classes. You can grant classes.
 <pre>
 # Main.cxy
-pi := 355.0 / 113.0
-input := scan()
-print(input + "Add this string!")
-input[0] = 'a'
+enter():
+	obj = sub:Sub[String]()
+	obj.make()
+
+enter()
 </pre>
+
 <pre>
-Error on line 5: calling non-const method on const object.
+# sub/Sub.cxy
+make():
+	i = In()
+	i.set("Hello!")
+	print(i)
+</pre>
+
+<pre>
+Hello!
 </pre>
 
 

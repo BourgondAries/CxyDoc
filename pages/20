@@ -1,24 +1,10 @@
-Types. The type information can be see using 'type'.
+Arrays. Arrays are static and of a fixed-size. They are 0-indexed.
 <pre>
-type 100
-a = 993128
-type a
-
-x = [10 7845 39]
-type x
-
-y = "cstring"
-type y
-
-z = String("control")
-type z
+myvar = [1 2 3]
+print(myvar[1])
 </pre>
 
-Prints (during compilation)
+Prints
 <pre>
-100: 32s
-a: 32s
-x: array 32s 3
-y: array 8u 8
-z: String
+2
 </pre>

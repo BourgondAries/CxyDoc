@@ -1,19 +1,13 @@
-Classes. You can only access classes directly in the folders under the current class.
+Arrays. The type information can be seen using 'type'.
 <pre>
-# Main.cxy
-enter():
-	sub:Sub.make()
-
-enter()
+myvar = [1 2 3]
+type myvar
+secvar = ['a' 'b']
+type secvar
 </pre>
 
+Prints (during compilation)
 <pre>
-# sub/Sub.cxy
-make():
-	print("Hello!")
+myvar: array 32s 3
+secvar: array 8u 2
 </pre>
-
-<pre>
-Hello!
-</pre>
-

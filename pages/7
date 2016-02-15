@@ -1,9 +1,15 @@
-Functions.
-Functions can be declared using the following syntax.
+Variables. The third type of variables are pointers.
 <pre>
-functionNameHere():
-	print("Function body comes here")
-	print("This can span several lines")
-	print("Each function is its own scope")
-	print("But a function has no access to variables around itself")
+a = 100  # Is a 32s type
+b = $a  # Is a 'ptr 32s' type
+print(@b)
 </pre>
+
+<pre>
+100
+</pre>
+
+A pointer is simply a value that points to a location in memory. Pointers can be used to efficiently move large data structures around. They are also useful when communicating with other systems.
+
+$ means 'get the address of'.
+@ means 'dereference the address'.

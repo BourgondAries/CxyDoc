@@ -1,10 +1,8 @@
-Semantics. Multidimensional arrays.
+Semantics. You can make variables constant, which means you can only call non-constant
+methods.
 <pre>
-multi = new[10] new[10] 32s()  # 10x10 array all init with garbage
-
-for i = 0; i < 10; ++i:
-	del multi[i]
-del multi
+max := 100
+++max  # Error!
+if max > 10:
+	print("This is fine")
 </pre>
-
-Multidimensional arrays are simple; make sure the expression in new returns a pointer.

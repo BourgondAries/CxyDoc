@@ -1,20 +1,21 @@
-Design. Line breaks and long arguments.
+Classes. You can also create an object of that class.
 <pre>
 # Main.cxy
-print('This is a very long argument, it would be sad if it could not fit within'
-	'some pre-defined length'
-	'Lines ending in \' will be continued on the next line')
+enter():
+	obj = sub:Sub()
+	obj.make()
 
-print('Only one indent is needed after the invocation'
-	'like so')
-
-createGUIElements(
-	'My GUI', table_size=[20 10],
-	color=0xFFAABB)
-
-while 4 <
-	3:
-	thisLooksWeirdButItIsValid()
+enter()
 </pre>
 
-A line ending in an operator, comma, opening-parenthesis, opening bracket, or opening curly brace will continue on the next line.
+<pre>
+# sub/Sub.cxy
+make():
+	print("Hello!")
+</pre>
+
+<pre>
+Hello!
+</pre>
+
+

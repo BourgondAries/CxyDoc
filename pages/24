@@ -1,21 +1,24 @@
-Classes. You can also create an object of that class.
+Types. The type information can be see using 'type'.
 <pre>
-# Main.cxy
-enter():
-	obj = sub:Sub()
-	obj.make()
+type 100
+a = 993128
+type a
 
-enter()
+x = [10 7845 39]
+type x
+
+y = "cstring"
+type y
+
+z = String("control")
+type z
 </pre>
 
+Prints (during compilation)
 <pre>
-# sub/Sub.cxy
-make():
-	print("Hello!")
+100: 32s
+a: 32s
+x: array 32s 3
+y: array 8u 8
+z: String
 </pre>
-
-<pre>
-Hello!
-</pre>
-
-

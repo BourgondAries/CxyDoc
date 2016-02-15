@@ -1,40 +1,13 @@
-Classes. Classes also support functions. They are called "methods".
+Arrays. Arrays sent to a function will instantiate a new function for the length and type of the array.
 <pre>
-# Main.cxy
-enter():
-	vector = new sub:Sub(x=1, y=2)
-	vector->doSomething()
-	(@vector).doSomething()
-	type vector
-	del vector
+myFunction(in):
+	print(in[0])
 
-enter()
+myvar = [1 2 3]
+myFunction(myvar)
 </pre>
 
-<pre>
-# sub/Sub.cxy
-new(this, x, y):
-	this->x = x
-	this->y = y
-
-del():
-	pass
-
-doSomething(this):
-	print(this->x)
-	print(this->y)
-</pre>
-
-The type of vector gives
-<pre>
-vector: ptr sub:Sub
-</pre>
-
-The code prints
+Prints
 <pre>
 1
-2
 </pre>
-
-
-Note that the destructor is called 'del' and the constructor is called 'new'. These are reuses of the new and del operators.

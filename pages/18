@@ -1,13 +1,9 @@
-Arrays. Arrays sent to a function will instantiate a new function for the length and type of the array.
+Functions.
+You have to state which value you want.
 <pre>
-myFunction(in):
-	print(in[0])
+doSomething():
+	return 10, 20
 
-myvar = [1 2 3]
-myFunction(myvar)
-</pre>
-
-Prints
-<pre>
-1
+print(doSomething())  # Error: ignoring a return value
+print(doSomething()[0])  # OK
 </pre>

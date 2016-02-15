@@ -1,11 +1,16 @@
-Semantics. Lambdas can capture surrounding scope variables and use them.
-<pre>
-array = [
-	1 2 3 4 5 6 7 8 9 10,
-]
-
-</pre>
+Semantics. It's possible to have different constants for each invocation:
 
 <pre>
+naiveLinearSum(sum_to=0):
+	limit := sum_to
+	total = 0
+	for sum_to in 0..limit:
+		total += sum_to
+	return total
+
+naiveLinearSum(sum_to=100)
+naiveLinearSum(sum_to=50)
 </pre>
 
+The only thing 'constants' are constrained on is that they simply can not be changed
+after first assignment.

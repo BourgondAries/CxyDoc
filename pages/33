@@ -1,68 +1,13 @@
+Constants. Constants are important. Using ':=' we can make a value constant in its scope. It can not be mutated.
 <pre>
 # Main.cxy
-enter()
-enter():
-	cnt = ut:Counter(max=10)
-	loop:
-		++cnt
-		print(cnt.get())
-		if cnt.get() == 0:
-			break
-
+pi := 355.0 / 113.0
+input := scan()
+print(input + "Add this string!")
+input[0] = 'a'
 </pre>
-
 <pre>
-# ut/Counter.cxy
-
-new(this, max=1):
-	this->cnt = 0
-	this->max = max
-
-get(this):
-	return this->cnt
-
-++(this):
-	cnt = $this->cnt
-	if @cnt >= maxval:
-		@cnt = 0
-	else:
-		@cnt += 1
-
-setMax(this in):
-	this->max = in
-
-getMax(this):
-	return this->max
+Error on line 5: calling non-const method on const object.
 </pre>
 
-<pre>
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre>
 
-How does the parser know that
-
-<pre>
-enter(...
-</pre>
-
-is not a function call? That would only be possible with LR or other parser that
-are more powerful. LL(1) can not know if this is an expression or not. So we need
-to add a single token that lets the parser know.
-
-<pre>
-enter():
-	print("Ello!")
-enter()
-</pre>
-
-For each statement, if we find a ':', we know that this is a definition of a functions.

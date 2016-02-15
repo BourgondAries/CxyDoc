@@ -1,9 +1,10 @@
-Functions.
-Functions support multiple statements.
+Variables.
+Multiple scopes can have their own version of the variable.
 <pre>
-doSomething(in):
-	in = in + 1
-	print(in)
-
-doSomething(100)
+scope:
+	value = 10
+	print(value)
+scope:
+	value = "my string message"
+	print(value)
 </pre>

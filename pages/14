@@ -1,9 +1,9 @@
 Functions.
-You have to state which value you want.
+Functions support multiple statements.
 <pre>
-doSomething():
-	return 10, 20
+doSomething(in):
+	in = in + 1
+	print(in)
 
-print(doSomething())  # Error: ignoring a return value
-print(doSomething()[0])  # OK
+doSomething(100)
 </pre>

@@ -1,12 +1,12 @@
-Variables.
-Variables are inside scopes. When the scope is exited, the variable that was declared locally is deleted.
+Variables. There are three main types of variables. Integers are one of the three main types.
+<h1> Integers </h1>
 <pre>
-scope:
-	value = 10
-	print(value)
-
-value = "string"  # OK
-print(value)
+a = 32s(10)
+b = 32u(10)
+c = 128u(1832948903129879)
+d = 1u(true)
+e = false
+f = 10s(-319)
 </pre>
 
-The two 'value' variables are completely different. A scope is a memory and run-time area that protects (to some extent) from the rest of the program.
+The form of integers is (number (s|u)). The 's' stands for 'signed', which means that one bit is used for a sign (+ and -). Signed numbers support negative numbers. 'u' stands for unsigned, meaning numbers that can not support negative numbers.

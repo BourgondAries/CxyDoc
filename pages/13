@@ -1,11 +1,10 @@
 Functions.
-Functions also support multiple output arguments. These are returned as a tuple
+Functions support arguments.
 <pre>
-doSomething(in second : out extra):
-	in = in + 1
-	return in + second, second - 1
+doSomething(in):
+	print(in)
 
-result = doSomething(100, second=50)
-print(result[0])
-print(result[1])
+doSomething(100)
 </pre>
+
+The standard argument name for any function is 'in'.

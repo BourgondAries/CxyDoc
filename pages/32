@@ -1,19 +1,20 @@
-Assign function pointers. Function pointers are not given a specific type until invocation happens.
+Design. Line breaks and long arguments.
 <pre>
-f(in):
-	return in + 10
+# Main.cxy
+print('This is a very long argument, it would be sad if it could not fit within'
+	'some pre-defined length'
+	'Lines ending in \' will be continued on the next line')
 
-a = f
-print(a(10))
-# print(a(64s(10)))  # Error! Not the same type!
+print('Only one indent is needed after the invocation'
+	'like so')
+
+createGUIElements(
+	'My GUI', table_size=[20 10],
+	color=0xFFAABB)
+
+while 4 <
+	3:
+	thisLooksWeirdButItIsValid()
 </pre>
 
-<pre>
-20
-</pre>
-
-The reason for picking the type by the invocation is because we want to keep polymorphism
-active until the last possible compiled instance. In this case, a becomes a function
-pointer to f that takes in exactly 32s.
-
-
+A line ending in an operator, comma, opening-parenthesis, opening bracket, or opening curly brace will continue on the next line.

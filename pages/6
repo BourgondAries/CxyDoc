@@ -1,10 +1,7 @@
-Variables.
-Multiple scopes can have their own version of the variable.
+Variables. The second type of variables are floats.
 <pre>
-scope:
-	value = 10
-	print(value)
-scope:
-	value = "my string message"
-	print(value)
+a = 32f(0.321)
+b = 64f(1000e380)
 </pre>
+
+Floats are floating point units. Currently only the IEEE standard will be used. So only some powers of twos will be able to represent floats.

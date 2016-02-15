@@ -1,16 +1,19 @@
-Semantics. It's possible to have different constants for each invocation:
-
+Assign function pointers. Function pointers are not given a specific type until invocation happens.
 <pre>
-naiveLinearSum(sum_to=0):
-	limit := sum_to
-	total = 0
-	for sum_to in 0..limit:
-		total += sum_to
-	return total
+f(in):
+	return in + 10
 
-naiveLinearSum(sum_to=100)
-naiveLinearSum(sum_to=50)
+a = f
+print(a(10))
+# print(a(64s(10)))  # Error! Not the same type!
 </pre>
 
-The only thing 'constants' are constrained on is that they simply can not be changed
-after first assignment.
+<pre>
+20
+</pre>
+
+The reason for picking the type by the invocation is because we want to keep polymorphism
+active until the last possible compiled instance. In this case, a becomes a function
+pointer to f that takes in exactly 32s.
+
+

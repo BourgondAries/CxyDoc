@@ -1,9 +1,12 @@
-Functions.
-Functions can also be called.
+Variables.
+Variables are inside scopes. When the scope is exited, the variable that was declared locally is deleted.
 <pre>
-functionNameHere():
-	print("Hello functions")
+scope:
+	value = 10
+	print(value)
 
-# Run the function
-functionNameHere()
+value = "string"  # OK
+print(value)
 </pre>
+
+The two 'value' variables are completely different. A scope is a memory and run-time area that protects (to some extent) from the rest of the program.

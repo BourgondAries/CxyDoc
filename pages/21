@@ -1,14 +1,10 @@
-Classes. Classes are simply the filenames. The constructor are the free statements of that file.
+Arrays. Array size is known at compile-time, and accessible.
 <pre>
-if scan() == "y":
-	subobj = new This
-else:
-	subobj = null
+myvar = [1 2 3]
+print(myvar.length)
 </pre>
 
-Press y two times and you end up with:
+Prints
 <pre>
-subobj -> subobj -> subobj -> null
+3
 </pre>
-
-The compiler statically inferres the type of subojb (ptr This) so that you can assign null if needed.

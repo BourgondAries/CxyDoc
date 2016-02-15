@@ -1,10 +1,27 @@
-Variables.
-Variables can not <i>shadow</i> outer scopes
+Variables. Variables support various operators.
+<h1> Integer Operations </h1>
 <pre>
-value = "string"
-scope:
-	value = 10  # Error! Overwriting a string-typed variable with an integer
-	print(value)
+a = 100
+b = 100
+c = 3
+d = a + b * c
+print(d)
+</pre>
+<pre>
+400
 </pre>
 
-Look closely at this and the previous example and note the difference: value is declared <strong>before</strong> the scope, so it is included in the scope (it can be used in the scope). This clashes with the integer definition of value.
+There is no precedence for the operators. The operators evaluate from right-to-left. This means that 2*3+4 = 2*7 = 14. The reason for this is because there are user-defined operators.
+
+Here is a limited list of integer operations.
+
+<ul>
+	<li> +: Addition </li>
+	<li> -: Subtraction </li>
+	<li> *: Multiplication </li>
+	<li> //: Integer division </li>
+	<li> &: Bitwise-AND </li>
+	<li> |: Bitwise-OR </li>
+	<li> ^: Bitwise-XOR </li>
+	<li> **: Exponentiation </li>
+</ul>

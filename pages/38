@@ -1,17 +1,33 @@
-New/Delete Grammar. Developing a consistent new/del grammar.
+Getting static functions for non-static objects.
 <pre>
-new INIT
-new[count] INIT
-</pre>
-<pre>
-a = new[100] 32s(9)
-b = new[10] 100
-c = new sml:String()
-
-del c
-del b
-del a
+# Main.cxy
+f = ut:Counter.get
+g = ut:Counter(max=10)
+f(this=$g)
 </pre>
 
-Note that explicitly writing the type is unnecessary. The type is inferred from the
-constructor.
+<pre>
+# ut/Counter.cxy
+new(this max=1):
+	this->cnt = 0
+	this->max = max
+
+self(this):
+	return @$$@this
+
+get(this):
+	return this->cnt
+
+++(this):
+	cnt = $this->cnt
+	if @cnt >= maxval:
+		@cnt = 0
+	else:
+		@cnt += 1
+
+setMax(this in):
+	this->max = max
+
+getMax(this):
+	return this->max
+</pre>

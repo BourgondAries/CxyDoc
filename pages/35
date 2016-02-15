@@ -1,8 +1,20 @@
-Semantics. You can make variables constant, which means you can only call non-constant
-methods.
 <pre>
-max := 100
-++max  # Error!
-if max > 10:
-	print("This is fine")
+f(in):
+	return in + 10
+g(in):
+	return in ^ 2, f(in)
+
+type g
+result = g(10)
+print(result[0] + result[1])
 </pre>
+
+<pre>
+g: function taking x returning (x, x)
+	x: trait ^ 32s, + 32s
+</pre>
+
+<pre>
+110
+</pre>
+

@@ -1,24 +1,48 @@
-Classes. Classes have various methods.
-When a variable is declared, it is empty. Only the type is set. You can manually call the constructor, and then pass the constructed object to the copy-assigner.
+Design.
 <pre>
 # Main.cxy
-enter()
+askFor(in):
+	print(in)
+	return scan()
+
+sumAll(in):
+	out = 0
+	for i = 0; i < in.getSize(); ++i:
+		out += in[i].getValue()
+	return out
+
 enter():
-	a = sub:Sub(10)  # Invoke constructor, then copy-assignment
-	b = a  # Invoke constructor, then copy-assignment
-	b = a  # Invoke copy-assignment
+	vector = Array[sub:Sub]()
+	vector.reserve(5)
+	i = 0
+	while true:
+		response = askFor("Do you want to quit? (y/n) (n): ")
+		if response == "y":
+			break
+		print("Here we go!")
+		vector.append(sub:Sub(i))
+		++i
+	print(sumAll(vector))
 
-	# Similar to the above, but impossible to express in the language
-	c  # of type sub:Sub
-	c = sub:Sub(100)
-
+enter()
 </pre>
+
 <pre>
 # sub/Sub.cxy
+i = 0
 new(this, in):
-	this->data = in
+	this->i = in
 
-=(this, in):
-	# Copy-assignment
-	this->data = in->data
+getValue(this):
+	return this->i
 </pre>
+
+If you press 'y' twice:
+<pre>
+Do you want to quit? (y/n) (n):
+Here we go!
+Do you want to quit? (y/n) (n):
+1
+</pre>
+
+

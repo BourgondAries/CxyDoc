@@ -1,10 +1,11 @@
-Arrays. Array size is known at compile-time, and accessible.
+Functions.
+Functions also support multiple output arguments. These are returned as a tuple
 <pre>
-myvar = [1 2 3]
-print(myvar.size)
-</pre>
+doSomething(in, second):
+	in = in + 1
+	return in + second, second - 1
 
-Prints
-<pre>
-3
+result = doSomething(100, second=50)
+print(result[0])
+print(result[1])
 </pre>

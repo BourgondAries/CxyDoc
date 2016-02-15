@@ -1,48 +1,40 @@
-Design.
+Classes. Classes also support functions. They are called "methods".
 <pre>
 # Main.cxy
-askFor(in):
-	print(in)
-	return scan()
-
-sumAll(in):
-	out = 0
-	for i = 0; i < in.getSize(); ++i:
-		out += in[i].getValue()
-	return out
-
 enter():
-	vector = Array[sub:Sub]()
-	vector.reserve(5)
-	i = 0
-	while true:
-		response = askFor("Do you want to quit? (y/n) (n): ")
-		if response == "y":
-			break
-		print("Here we go!")
-		vector.append(sub:Sub(i))
-		++i
-	print(sumAll(vector))
+	vector = new sub:Sub(x=1, y=2)
+	vector->doSomething()
+	(@vector).doSomething()
+	type vector
+	del vector
 
 enter()
 </pre>
 
 <pre>
 # sub/Sub.cxy
-i = 0
-new(this, in):
-	this->i = in
+new(this, x, y):
+	this->x = x
+	this->y = y
 
-getValue(this : out):
-	out = this->i
+del():
+	pass
+
+doSomething(this):
+	print(this->x)
+	print(this->y)
 </pre>
 
-If you press 'y' twice:
+The type of vector gives
 <pre>
-Do you want to quit? (y/n) (n):
-Here we go!
-Do you want to quit? (y/n) (n):
+vector: ptr sub:Sub
+</pre>
+
+The code prints
+<pre>
 1
+2
 </pre>
 
 
+Note that the destructor is called 'del' and the constructor is called 'new'. These are reuses of the new and del operators.
