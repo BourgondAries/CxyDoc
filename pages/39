@@ -1,13 +1,17 @@
 New/Delete Grammar. Developing a consistent new/del grammar.
 <pre>
-new TYPE ( ARGS )
-new TYPE
-new(count) TYPE ( ARGS )
-new(count) TYPE ( ARGS )
+new INIT
+new(count) INIT
 </pre>
 <pre>
-a = new(100) 32s(9)
-a[0] = 1
-a[2] = 10
+a = new[100] 32s(9)
+b = new[10] 100
+c = new sml:String()
+
+del c
+del b
 del a
 </pre>
+
+Note that explicitly writing the type is unnecessary. The type is inferred from the
+constructor.

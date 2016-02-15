@@ -4,3 +4,5 @@ Variables are declared and defined when assigned
 value = 10
 print(value)
 </pre>
+
+You can add different variables to the above and try to print them.

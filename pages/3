@@ -1,8 +1,10 @@
 Variables.
-Variable types can not be changed during runtime.
+Variable <strong>types</strong> can not be changed during runtime.
 <pre>
 value = 10
 print(value)
 value = "string"  # Error!
 print(value)
 </pre>
+
+The type of 'value' is inferred to be '32s', which means 32-bit, signed integer. This means it uses 32 bits of memory with one sign bit to convey all integer values between (inclusive) -2147483648 and 2147483647.

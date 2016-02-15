@@ -1,8 +1,10 @@
 Variables.
-Variables can not shadow outer scopes
+Variables can not <i>shadow</i> outer scopes
 <pre>
 value = "string"
 scope:
 	value = 10  # Error! Overwriting a string-typed variable with an integer
 	print(value)
 </pre>
+
+Look closely at this and the previous example and note the difference: value is declared <strong>before</strong> the scope, so it is included in the scope (it can be used in the scope). This clashes with the integer definition of value.

@@ -1,22 +1,25 @@
 First compilation. <br>
-Put the following code in the file 'Main0.cxy'
+Put the following code in the file 'Main.cxy'
 <pre>
 # Cxy Tutorial
-
 print("Hello World")
 </pre>
 
 Compile the code to an executable using
 <pre>
-cxyc Main0.cxy
+cxyc Main.cxy
 </pre>
 
 Run that code using
 <pre>
-./Main0
+./Main
 </pre>
 
 Expected output:
 <pre>
 Hello World
 </pre>
+
+If you have any trouble, check out the web. You should have cxyc installed on your
+computer. If the terminal complains that it can not find cxyc, and you actually did
+install it, then check if cxyc is added to PATH (search about PATH).

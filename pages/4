@@ -1,5 +1,5 @@
 Variables.
-Variables in scopes. When the scope is exited, the variable that was declared locally is deleted.
+Variables are inside scopes. When the scope is exited, the variable that was declared locally is deleted.
 <pre>
 scope:
 	value = 10
@@ -8,3 +8,5 @@ scope:
 value = "string"  # OK
 print(value)
 </pre>
+
+The two 'value' variables are completely different. A scope is a memory and run-time area that protects (to some extent) from the rest of the program.
