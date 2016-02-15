@@ -1,0 +1,9 @@
+Functions.
+Functions support multiple inputs, but they MUST be named when calling the function.
+<pre>
+doSomething(in second):
+	in = in + 1
+	print(in + second)
+
+doSomething(100, second=50)
+</pre>

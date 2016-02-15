@@ -1,0 +1,21 @@
+Classes. You can also create an object of that class.
+<pre>
+# Main.cxy
+enter():
+	obj = sub::Sub()
+	obj.make()
+
+enter()
+</pre>
+
+<pre>
+# sub/Sub.cxy
+make():
+	print("Hello!")
+</pre>
+
+<pre>
+Hello!
+</pre>
+
+

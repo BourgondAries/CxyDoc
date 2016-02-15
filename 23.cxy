@@ -1,0 +1,32 @@
+Classes. Classes also support functions. They are called "methods".
+<pre>
+# Main.cxy
+enter():
+	vector = new sub::Sub(x=1, y=2)
+	vector->doSomething()
+	(@vector).doSomething()
+	type vector
+	del vector
+
+enter()
+</pre>
+
+<pre>
+# sub/Sub.cxy
+doSomething(this):
+	print(this.x)
+	print(this.y)
+x
+y
+</pre>
+
+The type of vector gives
+<pre>
+vector: ptr sub::Sub
+</pre>
+
+The code prints
+<pre>
+1
+2
+</pre>

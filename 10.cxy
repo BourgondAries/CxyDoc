@@ -1,0 +1,9 @@
+Functions.
+Functions support multiple statements.
+<pre>
+doSomething(in):
+	in = in + 1
+	print(in)
+
+doSomething(100)
+</pre>

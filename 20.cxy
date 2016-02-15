@@ -1,0 +1,13 @@
+Arrays. The type information can be see using 'type'.
+<pre>
+myvar = [1 2 3]
+type myvar
+secvar = ['a' 'b']
+type secvar
+</pre>
+
+Prints (during compilation)
+<pre>
+myvar: array 32s 3
+secvar: array 8u 2
+</pre>

@@ -1,0 +1,9 @@
+Functions.
+Functions also support output arguments (returns).
+<pre>
+doSomething(in second : out):
+	in = in + 1
+	out = in + second
+
+print(doSomething(100, second=50))
+</pre>

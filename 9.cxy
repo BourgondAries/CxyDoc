@@ -1,0 +1,8 @@
+Functions.
+Functions support arguments.
+<pre>
+doSomething(in):
+	print(in)
+
+doSomething(100)
+</pre>

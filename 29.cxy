@@ -1,0 +1,20 @@
+Design. Line breaks and long arguments.
+<pre>
+# Main.cxy
+print('This is a very long argument, it would be sad if it could not fit within'
+	'some pre-defined length'
+	'Lines ending in \' will be continued on the next line')
+
+print('Only one indent is needed after the invocation'
+	'like so')
+
+createGUIElements(
+	'My GUI', table_size=[20 10],
+	color=0xFFAABB)
+
+while 4 <
+	3:
+	thisLooksWeirdButItIsValid()
+</pre>
+
+A line ending in an operator, comma, opening-parenthesis, opening bracket, or opening curly brace will continue on the next line.

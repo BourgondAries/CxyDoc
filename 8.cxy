@@ -1,0 +1,10 @@
+Functions.
+Functions can also be called.
+<pre>
+doSomething():
+	print("Do something")
+
+
+# Run the function
+doSomething()
+</pre>

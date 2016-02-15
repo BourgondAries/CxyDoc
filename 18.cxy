@@ -1,0 +1,10 @@
+Arrays. Array size is known at compile-time, and accessible.
+<pre>
+myvar = [1 2 3]
+print(myvar.size)
+</pre>
+
+Prints
+<pre>
+3
+</pre>

@@ -1,0 +1,8 @@
+Semantics. You can make variables constant, which means you can only call non-constant
+methods.
+<pre>
+max := 100
+++max  # Error!
+if max > 10:
+	print("This is fine")
+</pre>

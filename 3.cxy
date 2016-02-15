@@ -1,0 +1,8 @@
+Variables.
+Variable types can not be changed during runtime.
+<pre>
+value = 10
+print(value)
+value = "string"  # Error!
+print(value)
+</pre>

@@ -1,0 +1,14 @@
+Functions.
+Functions that you only want one output will default to 'out'.
+<pre>
+doSomething(: out extra):
+	out = 10
+	extra = 20
+
+print(doSomething())
+</pre>
+
+Prints
+<pre>
+10
+</pre>

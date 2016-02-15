@@ -1,0 +1,8 @@
+Variables.
+Variables can not shadow outer scopes
+<pre>
+value = "string"
+scope:
+	value = 10  # Error! Overwriting a string-typed variable with an integer
+	print(value)
+</pre>

@@ -1,0 +1,19 @@
+Classes. You can only access classes directly in the folders under the current class.
+<pre>
+# Main.cxy
+enter():
+	sub::Sub::make()
+
+enter()
+</pre>
+
+<pre>
+# sub/Sub.cxy
+make():
+	print("Hello!")
+</pre>
+
+<pre>
+Hello!
+</pre>
+

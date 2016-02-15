@@ -1,0 +1,6 @@
+Functions.
+Functions can be declared using the following syntax.
+<pre>
+doSomething():
+	print("Do something")
+</pre>

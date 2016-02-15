@@ -1,0 +1,20 @@
+<pre>
+f(x):
+	return x + 10
+g(x):
+	return x ^ 2, f(x)
+
+type g
+squared, added = g(10)
+print(squared + added)
+</pre>
+
+<pre>
+g: function taking x returning (x, x)
+	x: trait ^ 32s, + 32s
+</pre>
+
+<pre>
+110
+</pre>
+

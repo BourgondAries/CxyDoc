@@ -1,0 +1,10 @@
+Variables.
+Variables in scopes. When the scope is exited, the variable that was declared locally is deleted.
+<pre>
+scope:
+	value = 10
+	print(value)
+
+value = "string"  # OK
+print(value)
+</pre>

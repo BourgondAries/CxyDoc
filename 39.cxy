@@ -1,0 +1,13 @@
+New/Delete Grammar. Developing a consistent new/del grammar.
+<pre>
+new TYPE ( ARGS )
+new TYPE
+new(count) TYPE ( ARGS )
+new(count) TYPE ( ARGS )
+</pre>
+<pre>
+a = new(100) 32s(9)
+a[0] = 1
+a[2] = 10
+del a
+</pre>

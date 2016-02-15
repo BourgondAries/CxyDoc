@@ -1,0 +1,22 @@
+Classes. Classes have various methods.
+When a variable is declared, it is empty. Only the type is set. You can manually call the constructor, and then pass the constructed object to the copy-assigner.
+<pre>
+# Main.cxy
+enter()
+enter():
+	a = sub::Sub(10)  # Invoke constructor, then copy-assignment
+	b = a  # Invoke constructor, then copy-assignment
+	b = a  # Invoke copy-assignment
+
+	# Similar to the above, but impossible to express in the language
+	c  # of type sub::Sub
+	c.assign(sub::Sub(10))
+
+</pre>
+<pre>
+# sub/Sub.cxy
+data = in
+
+=(this in):
+	# Copy-assignment
+</pre>

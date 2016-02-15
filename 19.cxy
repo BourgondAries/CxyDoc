@@ -1,0 +1,13 @@
+Arrays. Arrays sent to a function will instantiate a new function for the length and type of the array.
+<pre>
+myFunction(in):
+	print(in[0])
+
+myvar = [1 2 3]
+myFunction(myvar)
+</pre>
+
+Prints
+<pre>
+1
+</pre>

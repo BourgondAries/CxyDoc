@@ -1,0 +1,10 @@
+Variables.
+Multiple scopes can have their own version of the variable.
+<pre>
+scope:
+	value = 10
+	print(value)
+scope:
+	value = "my string message"
+	print(value)
+</pre>

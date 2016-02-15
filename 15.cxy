@@ -1,0 +1,14 @@
+Functions.
+You can extract a single return explicitly.
+<pre>
+doSomething(: out extra):
+	out = 10
+	extra = 20
+
+print(doSomething()~extra)
+</pre>
+
+Prints
+<pre>
+20
+</pre>

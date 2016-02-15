@@ -1,0 +1,19 @@
+Breaktime. Find the nth fibonacci number, use 64-bit integers.
+<pre>
+fibonacci(in : out):
+	if in <= 0:
+		out = 64s(0)
+		return
+	prev = [0 1]
+	for i = 0; i < in; ++i:
+		out = prev[0] + prev[1]
+		prev[0] = prev[1]
+		prev[1] = out
+
+print(fibonacci(64s(10)))
+</pre>
+
+Prints
+<pre>
+34
+</pre>

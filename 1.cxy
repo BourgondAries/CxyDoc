@@ -1,0 +1,6 @@
+Variables.
+Variables are declared and defined when assigned
+<pre>
+value = 10
+print(value)
+</pre>

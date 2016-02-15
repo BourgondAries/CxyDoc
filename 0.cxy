@@ -1,0 +1,22 @@
+First compilation. <br>
+Put the following code in the file 'Main0.cxy'
+<pre>
+# Cxy Tutorial
+
+print("Hello World")
+</pre>
+
+Compile the code to an executable using
+<pre>
+cxyc Main0.cxy
+</pre>
+
+Run that code using
+<pre>
+./Main0
+</pre>
+
+Expected output:
+<pre>
+Hello World
+</pre>
