@@ -31,7 +31,9 @@
 				return "<input name=\"page\" type=\"submit\" value=\"$page\"$disabled>";
 			}
 			function getFileCountInDirectory($dir) {
-				return iterator_count(new FilesystemIterator($dir, FilesystemIterator::SKIP_DOTS)) - 1;
+				$result = array();
+				exec("ls pages/ | wc -l", $result);
+				return $result[0];
 			}
 			function createDropDownMenu($page, $to) {
 				$html = '<select name="page" onchange="this.form.submit();">';
