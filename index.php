@@ -16,9 +16,10 @@
 				return $page + $jump;
 			}
 			function getPrev($page, $jump=1) {
-				if ($page - $jump <= 0)
+				$prev = $page - $jump;
+				if ($prev <= 0)
 					return 0;
-				return $page - $jump;
+				return $prev;
 			}
 			function createButton($page, $disabled) {
 				if ($disabled == true)
@@ -26,6 +27,12 @@
 				else
 					$disabled = "";
 				return "<input name=\"page\" type=\"submit\" value=\"$page\"$disabled>";
+			}
+			function doesPageExist($page) {
+				return file_exists("pages/$page");
+			}
+			function getPage($page) {
+				return file_get_contents("pages/$page");
 			}
 
 			$page = $_GET['page'];
@@ -39,21 +46,22 @@
 
 			$page = intval($page);
 
-			if (file_exists("$page.cxy")) {
-				echo "<form action=\"/\">";
-				echo createButton($prev5, !file_exists("$prev5.cxy"));
-				echo createButton($prev, !file_exists("$prev.cxy"));
-				echo createButton($next, !file_exists("$next.cxy"));
-				echo createButton($next5, !file_exists("$next5.cxy"));
+			if (doesPageExist($page)) {
+				echo "<form>";
+				echo createButton($prev5, !doesPageExist("$prev5"));
+				echo createButton($prev, !doesPageExist("$prev"));
+				echo createButton($next, !doesPageExist("$next"));
+				echo createButton($next5, !doesPageExist("$next5"));
 				echo "</form>";
 				echo '<div class="vertical space"></div>';
-				echo file_get_contents("$page.cxy");
+				echo getPage($page);
 			}
 			else
-				echo '<pre> This part of the tutorial is not present </pre>
+				echo '
 					<form>
 						<input type="submit" name="page" value="0">
-					</form?';
+					</form>
+					<pre> This part of the tutorial is not present </pre>';
 		?>
 	</body>
 </html>
