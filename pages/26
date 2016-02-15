@@ -1,23 +1,42 @@
-Classes. You can grant classes.
+Design.
 <pre>
 # Main.cxy
+askFor(in : out):
+	print(in)
+	out = scan()
+
+sumAll(in : out):
+	out = 0
+	for i = 0; i < in.getSize(); ++i:
+		out += in[i].getValue()
+
 enter():
-	obj = sub::Sub[String]()
-	obj.make()
+	vector = Array[sub::Sub]()
+	vector.reserve(5)
+	i = 0
+	while true:
+		response = askFor("Do you want to quit? (y/n) (n): ")
+		if response == "y":
+			break
+		print("Here we go!")
+		vector.append(sub::Sub(i))
+		++i
+	sumAll(vector)
+
 
 enter()
 </pre>
 
 <pre>
 # sub/Sub.cxy
-make():
-	i = In()
-	i.set("Hello!")
-	print(i)
+i
+getValue(this : out):
+	out = this->i
 </pre>
 
+If you press 'y' twice.
 <pre>
-Hello!
+1
 </pre>
 
 

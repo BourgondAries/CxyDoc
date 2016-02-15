@@ -1,10 +1,9 @@
 Functions.
 Functions can also be called.
 <pre>
-doSomething():
-	print("Do something")
-
+functionNameHere():
+	print("Hello functions")
 
 # Run the function
-doSomething()
+functionNameHere()
 </pre>

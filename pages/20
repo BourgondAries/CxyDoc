@@ -1,13 +1,24 @@
-Arrays. The type information can be see using 'type'.
+Types. The type information can be see using 'type'.
 <pre>
-myvar = [1 2 3]
-type myvar
-secvar = ['a' 'b']
-type secvar
+type 100
+a = 993128
+type a
+
+x = [10 7845 39]
+type x
+
+y = "cstring"
+type y
+
+z = String("control")
+type z
 </pre>
 
 Prints (during compilation)
 <pre>
-myvar: array 32s 3
-secvar: array 8u 2
+100: 32s
+a: 32s
+x: array 32s 3
+y: array 8u 8
+z: String
 </pre>

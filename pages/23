@@ -1,32 +1,19 @@
-Classes. Classes also support functions. They are called "methods".
+Classes. You can only access classes directly in the folders under the current class.
 <pre>
 # Main.cxy
 enter():
-	vector = new sub::Sub(x=1, y=2)
-	vector->doSomething()
-	(@vector).doSomething()
-	type vector
-	del vector
+	sub::Sub::make()
 
 enter()
 </pre>
 
 <pre>
 # sub/Sub.cxy
-doSomething(this):
-	print(this.x)
-	print(this.y)
-x
-y
+make():
+	print("Hello!")
 </pre>
 
-The type of vector gives
 <pre>
-vector: ptr sub::Sub
+Hello!
 </pre>
 
-The code prints
-<pre>
-1
-2
-</pre>

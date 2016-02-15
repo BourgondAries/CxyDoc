@@ -1,9 +1,10 @@
 Functions.
 Functions also support output arguments (returns).
 <pre>
-doSomething(in second : out):
+doSomething(in second):
 	in = in + 1
-	out = in + second
+	return in + second
 
-print(doSomething(100, second=50))
+result = doSomething(100, second=50)
+print(result)
 </pre>

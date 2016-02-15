@@ -1,42 +1,50 @@
-Design.
+Cxy is almost pseudo-code.
 <pre>
-# Main.cxy
-askFor(in : out):
-	print(in)
-	out = scan()
+dijkstra(graph source : dist prev):
+	q = Set()
+	dist = VertexMap()
+	prev = dist
+	foreach vertex in graph:
+		dist[vertex] = inf
+		prev[vertex] = nan
+		q.add(vertex)
 
-sumAll(in : out):
-	out = 0
-	for i = 0; i < in.getSize(); ++i:
-		out += in[i].getValue()
+	dist[source] = 0
 
-enter():
-	vector = Array[sub::Sub]()
-	vector.reserve(5)
-	i = 0
-	while true:
-		response = askFor("Do you want to quit? (y/n) (n): ")
-		if response == "y":
-			break
-		print("Here we go!")
-		vector.append(sub::Sub(i))
-		++i
-	sumAll(vector)
+	while q.isNotEmpty():
+		u = dist.getMinimalDistance()
+		q.remove(u)
 
+		foreach vertex in u.neighbours():
+			alt = dist[u] + length(u, vertex)
+			if alt < dist[vertex]:
+				dist[vertex] = alt
+				prev[vertex] = u
 
-enter()
 </pre>
 
+Compare the above to the actual pseudocode from wikipedia
 <pre>
-# sub/Sub.cxy
-i
-getValue(this : out):
-	out = this->i
+function Dijkstra(Graph, source):
+
+	create vertex set Q
+
+	for each vertex v in Graph:             // Initialization
+		dist[v] <- INFINITY                  // Unknown distance from source to v
+		prev[v] <- UNDEFINED                 // Previous node in optimal path from source
+		add v to Q                          // All nodes initially in Q (unvisited nodes)
+
+	dist[source] <- 0                        // Distance from source to source
+
+	while Q is not empty:
+		u <- vertex in Q with min dist[u]    // Source node will be selected first
+		remove u from Q
+
+		for each neighbor v of u:           // where v is still in Q.
+			alt <- dist[u] + length(u, v)
+			if alt < dist[v]:               // A shorter path to v has been found
+				dist[v] <- alt
+				prev[v] <- u
+
+	return dist[], prev[]
 </pre>
-
-If you press 'y' twice.
-<pre>
-1
-</pre>
-
-

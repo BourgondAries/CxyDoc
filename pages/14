@@ -1,14 +1,9 @@
 Functions.
-Functions that you only want one output will default to 'out'.
+You have to state which value you want.
 <pre>
-doSomething(: out extra):
-	out = 10
-	extra = 20
+doSomething():
+	return 10, 20
 
-print(doSomething())
-</pre>
-
-Prints
-<pre>
-10
+print(doSomething())  # Error: ignoring a return value
+print(doSomething()[0])  # OK
 </pre>

@@ -1,8 +1,16 @@
-Semantics. You can make variables constant, which means you can only call non-constant
-methods.
+Semantics. It's possible to have different constants for each invocation:
+
 <pre>
-max := 100
-++max  # Error!
-if max > 10:
-	print("This is fine")
+naiveLinearSum(sum_to=0):
+	limit := sum_to
+	total = 0
+	for sum_to in 0..limit:
+		total += sum_to
+	return total
+
+naiveLinearSum(sum_to=100)
+naiveLinearSum(sum_to=50)
 </pre>
+
+The only thing 'constants' are constrained on is that they simply can not be changed
+after first assignment.

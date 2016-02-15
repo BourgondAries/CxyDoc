@@ -1,8 +1,8 @@
-Classes. You can also create an object of that class.
+Classes. You can grant classes.
 <pre>
 # Main.cxy
 enter():
-	obj = sub::Sub()
+	obj = sub::Sub[String]()
 	obj.make()
 
 enter()
@@ -11,7 +11,9 @@ enter()
 <pre>
 # sub/Sub.cxy
 make():
-	print("Hello!")
+	i = In()
+	i.set("Hello!")
+	print(i)
 </pre>
 
 <pre>

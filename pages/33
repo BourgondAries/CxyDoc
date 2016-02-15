@@ -1,19 +1,68 @@
-Assign function pointers. Function pointers are not given a specific type until invocation happens.
 <pre>
-f(in):
-	return in + 10
+# Main.cxy
+enter()
+enter():
+	cnt = ut:Counter(max=10)
+	loop:
+		++cnt
+		print(cnt.get())
+		if cnt.get() == 0:
+			break
 
-a = f
-print(a(10))
-# print(a(64s(10)))  # Error! Not the same type!
 </pre>
 
 <pre>
-20
+# ut/Counter.cxy
+
+init(this max=1):
+	this->cnt = 0
+	this->max = max
+
+get(this):
+	return this->cnt
+
+++(this):
+	cnt = $this->cnt
+	if @cnt >= maxval:
+		@cnt = 0
+	else:
+		@cnt += 1
+
+setMax(this in):
+	this->max = in
+
+getMax(this):
+	return this->max
 </pre>
 
-The reason for picking the type by the invocation is because we want to keep polymorphism
-active until the last possible compiled instance. In this case, a becomes a function
-pointer to f that takes in exactly 32s.
+<pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre>
 
+How does the parser know that
 
+<pre>
+enter(...
+</pre>
+
+is not a function call? That would only be possible with LR or other parser that
+are more powerful. LL(1) can not know if this is an expression or not. So we need
+to add a single token that lets the parser know.
+
+<pre>
+enter():
+	print("Ello!")
+enter()
+</pre>
+
+For each statement, if we find a ':', we know that this is a definition of a functions.

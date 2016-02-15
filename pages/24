@@ -1,8 +1,9 @@
-Classes. You can only access classes directly in the folders under the current class.
+Classes. You can also create an object of that class.
 <pre>
 # Main.cxy
 enter():
-	sub::Sub::make()
+	obj = sub::Sub()
+	obj.make()
 
 enter()
 </pre>
@@ -16,4 +17,5 @@ make():
 <pre>
 Hello!
 </pre>
+
 

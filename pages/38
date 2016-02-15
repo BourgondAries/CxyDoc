@@ -1,12 +1,17 @@
-Semantics. Constants are useful for ensuring read-only semantics.
+New/Delete Grammar. Developing a consistent new/del grammar.
 <pre>
-onlyRead(variable):
-	@variable += 1  # TRIES TO EDIT: Error
-	print(@variable)  # Allowed, only reading
+new INIT
+new(count) INIT
+</pre>
+<pre>
+a = new[100] 32s(9)
+b = new[10] 100
+c = new sml:String()
 
-myvar = new 32s(10)
-onlyRead($$@myvar)  # Send a $$ (const-pointer)
+del c
+del b
+del a
 </pre>
 
-This will fail to compile. You send in a const-pointer, which means that the data
-it is pointing to can not be modified, only read.
+Note that explicitly writing the type is unnecessary. The type is inferred from the
+constructor.

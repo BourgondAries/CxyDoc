@@ -1,10 +1,13 @@
-Arrays. Array size is known at compile-time, and accessible.
+Arrays. Arrays sent to a function will instantiate a new function for the length and type of the array.
 <pre>
+myFunction(in):
+	print(in[0])
+
 myvar = [1 2 3]
-print(myvar.size)
+myFunction(myvar)
 </pre>
 
 Prints
 <pre>
-3
+1
 </pre>

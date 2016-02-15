@@ -1,10 +1,10 @@
-Arrays. Arrays are static and of a fixed-size. They are 0-indexed.
+Arrays. Array size is known at compile-time, and accessible.
 <pre>
 myvar = [1 2 3]
-print(myvar[1])
+print(myvar.size)
 </pre>
 
 Prints
 <pre>
-2
+3
 </pre>

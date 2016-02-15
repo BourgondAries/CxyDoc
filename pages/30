@@ -1,13 +1,22 @@
-Constants. Constants are important. Using ':=' we can make a value constant in its scope. It can not be mutated.
+Classes. Classes have various methods.
+When a variable is declared, it is empty. Only the type is set. You can manually call the constructor, and then pass the constructed object to the copy-assigner.
 <pre>
 # Main.cxy
-pi := 355/113
-input := scan()
-print(input + "Add this string!")
-input[0] = 'a'
+enter()
+enter():
+	a = sub::Sub(10)  # Invoke constructor, then copy-assignment
+	b = a  # Invoke constructor, then copy-assignment
+	b = a  # Invoke copy-assignment
+
+	# Similar to the above, but impossible to express in the language
+	c  # of type sub::Sub
+	c.assign(sub::Sub(10))
+
 </pre>
 <pre>
-Error on line 4: calling non-const method on const object.
+# sub/Sub.cxy
+data = in
+
+=(this in):
+	# Copy-assignment
 </pre>
-
-

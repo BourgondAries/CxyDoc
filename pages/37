@@ -1,16 +1,12 @@
-Semantics. It's possible to have different constants for each invocation:
-
+Semantics. Constants are useful for ensuring read-only semantics.
 <pre>
-naiveLinearSum(sum_to=0):
-	limit := sum_to
-	total = 0
-	for sum_to in 0..limit:
-		total += sum_to
-	return total
+onlyRead(variable):
+	@variable += 1  # TRIES TO EDIT: Error
+	print(@variable)  # Allowed, only reading
 
-naiveLinearSum(sum_to=100)
-naiveLinearSum(sum_to=50)
+myvar = new 32s(10)
+onlyRead($$@myvar)  # Send a $$ (const-pointer)
 </pre>
 
-The only thing 'constants' are constrained on is that they simply can not be changed
-after first assignment.
+This will fail to compile. You send in a const-pointer, which means that the data
+it is pointing to can not be modified, only read.

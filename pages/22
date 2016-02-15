@@ -1,14 +1,32 @@
-Classes. Classes are simply the filenames. The constructor are the free statements of that file.
+Classes. Classes also support functions. They are called "methods".
 <pre>
-if scan() == "y":
-	subobj = new[This]()
-else:
-	subobj = null
+# Main.cxy
+enter():
+	vector = new sub::Sub(x=1, y=2)
+	vector->doSomething()
+	(@vector).doSomething()
+	type vector
+	del vector
+
+enter()
 </pre>
 
-Press y two times and you end up with:
 <pre>
-subobj -> subobj -> subobj -> null
+# sub/Sub.cxy
+doSomething(this):
+	print(this.x)
+	print(this.y)
+x
+y
 </pre>
 
-The compiler statically inferres the type of subojb (ptr This) so that you can assign null if needed.
+The type of vector gives
+<pre>
+vector: ptr sub::Sub
+</pre>
+
+The code prints
+<pre>
+1
+2
+</pre>

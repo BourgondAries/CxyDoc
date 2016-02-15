@@ -1,20 +1,19 @@
+Assign function pointers. Function pointers are not given a specific type until invocation happens.
 <pre>
-f(x):
-	return x + 10
-g(x):
-	return x ^ 2, f(x)
+f(in):
+	return in + 10
 
-type g
-squared, added = g(10)
-print(squared + added)
+a = f
+print(a(10))
+# print(a(64s(10)))  # Error! Not the same type!
 </pre>
 
 <pre>
-g: function taking x returning (x, x)
-	x: trait ^ 32s, + 32s
+20
 </pre>
 
-<pre>
-110
-</pre>
+The reason for picking the type by the invocation is because we want to keep polymorphism
+active until the last possible compiled instance. In this case, a becomes a function
+pointer to f that takes in exactly 32s.
+
 

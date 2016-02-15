@@ -1,33 +1,8 @@
-Getting static functions for non-static objects.
+Semantics. You can make variables constant, which means you can only call non-constant
+methods.
 <pre>
-# Main.cxy
-f = ut:Counter.get
-g = ut:Counter(max=10)
-f(this=$g)
-</pre>
-
-<pre>
-# ut/Counter.cxy
-init(this max=1):
-	this->cnt = 0
-	this->max = max
-
-self(this):
-	return @$$@this
-
-get(this):
-	return this->cnt
-
-++(this):
-	cnt = $this->cnt
-	if @cnt >= maxval:
-		@cnt = 0
-	else:
-		@cnt += 1
-
-setMax(this in):
-	this->max = max
-
-getMax(this):
-	return this->max
+max := 100
+++max  # Error!
+if max > 10:
+	print("This is fine")
 </pre>

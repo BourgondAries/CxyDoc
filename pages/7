@@ -1,6 +1,9 @@
 Functions.
 Functions can be declared using the following syntax.
 <pre>
-doSomething():
-	print("Do something")
+functionNameHere():
+	print("Function body comes here")
+	print("This can span several lines")
+	print("Each function is its own scope")
+	print("But a function has no access to variables around itself")
 </pre>

@@ -1,17 +1,10 @@
-New/Delete Grammar. Developing a consistent new/del grammar.
+Semantics. Multidimensional arrays.
 <pre>
-new INIT
-new(count) INIT
-</pre>
-<pre>
-a = new[100] 32s(9)
-b = new[10] 100
-c = new sml:String()
+multi = new[10] new[10] 32s()  # 10x10 array all init with garbage
 
-del c
-del b
-del a
+for i = 0; i < 10; ++i:
+	del multi[i]
+del multi
 </pre>
 
-Note that explicitly writing the type is unnecessary. The type is inferred from the
-constructor.
+Multidimensional arrays are simple; make sure the expression in new returns a pointer.

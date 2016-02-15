@@ -7,3 +7,5 @@ doSomething(in second):
 
 doSomething(100, second=50)
 </pre>
+
+Only 'in' does not need to be named. This is to make code more readable.

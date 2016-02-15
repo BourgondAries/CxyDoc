@@ -6,3 +6,5 @@ doSomething(in):
 
 doSomething(100)
 </pre>
+
+The standard argument name for any function is 'in'.

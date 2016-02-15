@@ -1,24 +1,14 @@
-Types. The type information can be see using 'type'.
+Classes. Classes are simply the filenames. The constructor are the free statements of that file.
 <pre>
-type 100
-a = 993128
-type a
-
-x = [10 7845 39]
-type x
-
-y = "cstring"
-type y
-
-z = String("control")
-type z
+if scan() == "y":
+	subobj = new[This]()
+else:
+	subobj = null
 </pre>
 
-Prints (during compilation)
+Press y two times and you end up with:
 <pre>
-100: 32s
-a: 32s
-x: array 32s 3
-y: array 8u 8
-z: String
+subobj -> subobj -> subobj -> null
 </pre>
+
+The compiler statically inferres the type of subojb (ptr This) so that you can assign null if needed.
