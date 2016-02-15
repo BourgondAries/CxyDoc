@@ -1,4 +1,4 @@
-<select name="page" onchange="this.form.submit()">
+<select name="page" onchange="httpGetAsyncPage(this.value,getPage);">
 <optgroup label="Setup">
 <option value="0"> First compilation</option>
 </optgroup>

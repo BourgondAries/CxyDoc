@@ -7,7 +7,7 @@
 
 cd pages/
 out=../autogen/navigation
-echo '<select name="page" onchange="this.form.submit()">' > "$out"
+echo '<select name="page" onchange="httpGetAsyncPage(this.value,getPage);">' > "$out"
 lasthead=
 
 for i in $(ls | sort -n); do

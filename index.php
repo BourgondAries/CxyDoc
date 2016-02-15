@@ -48,4 +48,26 @@
 			echo generateNavibar($page);
 		?>
 	</body>
+	<script>
+		function getPage(response, selected) {
+			document.open();
+			document.write(response);
+			document.close();
+			selects = document.getElementsByTagName("select");
+			for (i = 0; i < selects.length; ++i) {
+				selects[i].selectedIndex = selected;
+			}
+		}
+		function httpGetAsyncPage(theUrl, callback) {
+			selected = theUrl;
+			theUrl = "?page=".concat(theUrl);
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function() {
+				if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+					callback(xmlHttp.responseText, selected);
+				}
+			xmlHttp.open("GET", theUrl, true); // true for asynchronous
+			xmlHttp.send(null);
+		}
+	</script>
 </html>
