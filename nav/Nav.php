@@ -19,6 +19,7 @@
 		return $result[0];
 	}
 	function createDropDownMenu($page, $to) {
+		return file_get_contents('autogen/navigation');
 		$html = '<select name="page" onchange="this.form.submit();">';
 		for ($i = 0; $i < $to; ++$i) {
 			if ($i == $page)

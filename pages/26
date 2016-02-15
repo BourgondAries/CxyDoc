@@ -1,4 +1,6 @@
-Classes. Classes also support functions. They are called "methods".
+Classes. Methods.
+
+Classes also support functions. They are called "methods".
 <pre>
 # Main.cxy
 enter():

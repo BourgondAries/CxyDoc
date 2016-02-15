@@ -1,4 +1,4 @@
-Functions.
+Functions. Outputs.
 Functions also support output arguments (returns).
 <pre>
 doSomething(in, second):

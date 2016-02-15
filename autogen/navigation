@@ -1,0 +1,81 @@
+<select name="page" onchange="this.form.submit()">
+<optgroup label="Setup">
+<option value="0"> First compilation</option>
+</optgroup>
+<optgroup label="Variables">
+<option value="1"> Declaration</option>
+<option value="2"> Operations</option>
+<option value="3"> Types</option>
+<option value="4"> Types of Variables</option>
+<option value="5"> Variables operators</option>
+<option value="6"> Floats</option>
+<option value="7"> Pointers</option>
+<option value="8"> Scopes</option>
+<option value="9"> Shadowing</option>
+<option value="10"> Multiple Scopes</option>
+</optgroup>
+<optgroup label="Functions">
+<option value="11"> Definitions</option>
+<option value="12"> Calling</option>
+<option value="13"> Arguments</option>
+<option value="14"> Statements</option>
+<option value="15"> Inputs</option>
+<option value="16"> Outputs</option>
+<option value="17"> Multiple Outputs</option>
+<option value="18"> Tuples</option>
+</optgroup>
+<optgroup label="Breaktime">
+<option value="19"> Fibonacci</option>
+</optgroup>
+<optgroup label="Arrays">
+<option value="20"> Declarations</option>
+<option value="21"> Compile-time</option>
+<option value="22"> New Types</option>
+<option value="23"> Type Info</option>
+</optgroup>
+<optgroup label="Types">
+<option value="24"> Information</option>
+</optgroup>
+<optgroup label="Classes">
+<option value="25"> Definitions</option>
+<option value="26"> Methods</option>
+<option value="27"> Access</option>
+<option value="28"> Objects</option>
+<option value="29"> Granting</option>
+</optgroup>
+<optgroup label="Design">
+<option value="30"> Small example</option>
+</optgroup>
+<optgroup label="Breaktime">
+<option value="31"> Cxy is almost pseudo-code</option>
+</optgroup>
+<optgroup label="Design">
+<option value="32"> Line breaks and long arguments</option>
+</optgroup>
+<optgroup label="Constants">
+<option value="33"> Constants are important</option>
+</optgroup>
+<optgroup label="Classes">
+<option value="34"> Classes have various methods</option>
+</optgroup>
+<optgroup label="Types">
+<option value="35"> More type information</option>
+</optgroup>
+<optgroup label="Variables">
+<option value="36"> Assign function pointers</option>
+</optgroup>
+<optgroup label="Breaktime">
+<option value="37"> Small Counter</option>
+</optgroup>
+<optgroup label="Classes">
+<option value="38"> Static methods</option>
+</optgroup>
+<optgroup label="Semantics">
+<option value="39"> Constants</option>
+<option value="40"> Constaints II</option>
+<option value="41"> Constants III</option>
+<option value="42"> New/Delete Grammar</option>
+<option value="43"> Multidimensional arrays</option>
+<option value="44"> Default Runtime</option>
+</optgroup>
+</select>

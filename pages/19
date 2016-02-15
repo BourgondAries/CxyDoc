@@ -1,4 +1,6 @@
-Breaktime. Find the nth fibonacci number, use 64-bit integers.
+Breaktime. Fibonacci.
+
+Find the nth fibonacci number, use 64-bit integers.
 <pre>
 fibonacci(in):
 	if in <= 0:

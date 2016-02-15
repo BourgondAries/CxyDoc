@@ -1,0 +1,18 @@
+Semantics. Default Runtime. A class's default run code is run before the new operator is run.
+<pre>
+new(this):
+	for i = 0; i < this->array.len; ++i:
+		print(this->array[i])
+
+array = [
+	1,2,3,4,5,6,7,8,9,
+	10,11,12,13,14,15,
+	18,19,33,28,399,
+]
+
+</pre>
+
+<pre>
+12345678910111213141518193328399
+</pre>
+

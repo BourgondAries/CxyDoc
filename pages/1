@@ -1,4 +1,4 @@
-Variables.
+Variables. Declaration
 Variables are declared and defined when assigned
 <pre>
 value = 10

@@ -1,4 +1,4 @@
-Variables.
+Variables. Types.
 Variable <strong>types</strong> can not be changed during runtime.
 <pre>
 value = 10

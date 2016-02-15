@@ -1,4 +1,4 @@
-Semantics. It's possible to have different constants for each invocation:
+Semantics. Constaints II. It's possible to have different constants for each invocation:
 
 <pre>
 naiveLinearSum(sum_to=0):

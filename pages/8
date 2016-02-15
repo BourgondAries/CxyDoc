@@ -1,4 +1,4 @@
-Variables.
+Variables. Scopes.
 Variables are inside scopes. When the scope is exited, the variable that was declared locally is deleted.
 <pre>
 scope:

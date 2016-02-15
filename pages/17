@@ -1,4 +1,4 @@
-Functions.
+Functions. Multiple Outputs.
 Functions also support multiple output arguments. These are returned as a tuple
 <pre>
 doSomething(in, second):

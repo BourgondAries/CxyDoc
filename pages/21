@@ -1,4 +1,6 @@
-Arrays. Array size is known at compile-time, and accessible.
+Arrays. Compile-time.
+
+Array size is known at compile-time, and accessible.
 <pre>
 myvar = [1 2 3]
 print(myvar.length)

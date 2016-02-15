@@ -1,4 +1,4 @@
-Semantics. You can make variables constant, which means you can only call non-constant
+Semantics. Constants. You can make variables constant, which means you can only call non-constant
 methods.
 <pre>
 max := 100

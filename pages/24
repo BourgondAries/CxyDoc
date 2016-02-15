@@ -1,4 +1,6 @@
-Types. The type information can be see using 'type'.
+Types. Information.
+
+The type information can be see using 'type'.
 <pre>
 type 100
 a = 993128

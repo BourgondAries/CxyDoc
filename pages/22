@@ -1,4 +1,5 @@
-Arrays. Arrays sent to a function will instantiate a new function for the length and type of the array.
+Arrays. New Types.
+Arrays sent to a function will instantiate a new function for the length and type of the array.
 <pre>
 myFunction(in):
 	print(in[0])

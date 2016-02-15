@@ -1,4 +1,4 @@
-Variables. The third type of variables are pointers.
+Variables. Pointers.
 <pre>
 a = 100  # Is a 32s type
 b = $a  # Is a 'ptr 32s' type

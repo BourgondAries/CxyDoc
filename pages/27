@@ -1,4 +1,6 @@
-Classes. You can only access classes directly in the folders under the current class.
+Classes. Access.
+
+You can only access classes directly in the folders under the current class.
 <pre>
 # Main.cxy
 enter():

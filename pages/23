@@ -1,4 +1,6 @@
-Arrays. The type information can be seen using 'type'.
+Arrays. Type Info.
+
+The type information can be seen using 'type'.
 <pre>
 myvar = [1 2 3]
 type myvar

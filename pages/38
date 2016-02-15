@@ -1,4 +1,4 @@
-Getting static functions for non-static objects.
+Classes. Static methods. Getting static functions for non-static objects.
 <pre>
 # Main.cxy
 f = ut:Counter.get

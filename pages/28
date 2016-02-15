@@ -1,4 +1,6 @@
-Classes. You can also create an object of that class.
+Classes. Objects.
+
+You can also create an object of that class.
 <pre>
 # Main.cxy
 enter():

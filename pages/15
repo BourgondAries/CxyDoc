@@ -1,4 +1,4 @@
-Functions.
+Functions. Inputs.
 Functions support multiple inputs, but they MUST be named when calling the function.
 <pre>
 doSomething(in, second):

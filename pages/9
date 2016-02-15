@@ -1,4 +1,4 @@
-Variables.
+Variables. Shadowing.
 Variables can not <i>shadow</i> outer scopes
 <pre>
 value = "string"

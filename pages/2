@@ -1,5 +1,5 @@
-Variables.
-Variables can be changed during runtime.
+Variables. Operations.
+
 <pre>
 value = 10
 print(value)

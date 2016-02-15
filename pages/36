@@ -1,4 +1,4 @@
-Assign function pointers. Function pointers are not given a specific type until invocation happens.
+Variables. Assign function pointers. Function pointers are not given a specific type until invocation happens.
 <pre>
 f(in):
 	return in + 10

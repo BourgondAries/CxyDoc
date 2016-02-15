@@ -12,7 +12,7 @@
 			form { display: inline; }
 			button { background: #232b30; border: 1px solid #1c252b; color: #9fa8b0; font-weight: bold; height: 3vh; outline: 0; width: 20%; }
 			button:hover { color: #fff; background: #4C5A64; }
-			select { border: 1px solid #1c252b; font-weight: bold; height: 3vh; width: 20%; }
+			select { border: 1px solid #1c252b; font-weight: bold; height: 3vh; width: 19%; }
 			pre { background-color: rgba(235, 236, 228, 0.2); font-family: monospace; margin: 1vh 0 1vh 0; padding: 1vh 1vw 1vh 1vw; }
 		</style>
 		<title>Cxy: The Fourth Evolution</title>

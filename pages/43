@@ -1,0 +1,10 @@
+Semantics. Multidimensional arrays.
+<pre>
+multi = new[10] new[10] 32s()  # 10x10 array all init with garbage
+
+for i = 0; i < 10; ++i:
+	del multi[i]
+del multi
+</pre>
+
+Multidimensional arrays are simple; make sure the expression in new returns a pointer.

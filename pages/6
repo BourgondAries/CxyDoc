@@ -1,4 +1,4 @@
-Variables. The second type of variables are floats.
+Variables. Floats.
 <pre>
 a = 32f(0.321)
 b = 64f(1000e380)

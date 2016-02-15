@@ -1,4 +1,4 @@
-Variables.
+Variables. Multiple Scopes
 Multiple scopes can have their own version of the variable.
 <pre>
 scope:

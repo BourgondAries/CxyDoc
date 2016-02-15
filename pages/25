@@ -1,4 +1,6 @@
-Classes. Classes are simply the filenames. The constructor are the free statements of that file.
+Classes. Definitions.
+
+Classes are simply the filenames. The constructor are the free statements of that file.
 <pre>
 subobj = null  # To put it in the outer scope
 if scan() == "y":
