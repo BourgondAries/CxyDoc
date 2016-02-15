@@ -1,12 +1,12 @@
 <pre>
-f(x):
-	return x + 10
-g(x):
-	return x ^ 2, f(x)
+f(in):
+	return in + 10
+g(in):
+	return in ^ 2, f(in)
 
 type g
-squared, added = g(10)
-print(squared + added)
+result = g(10)
+print(result[0] + result[1])
 </pre>
 
 <pre>

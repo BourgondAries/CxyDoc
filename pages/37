@@ -5,7 +5,7 @@ onlyRead(variable):
 	print(@variable)  # Allowed, only reading
 
 myvar = new 32s(10)
-onlyRead($$@myvar)  # Send a $$ (const-pointer)
+onlyRead(variable=$$@myvar)  # Send a $$ (const-pointer)
 </pre>
 
 This will fail to compile. You send in a const-pointer, which means that the data

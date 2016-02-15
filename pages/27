@@ -1,8 +1,8 @@
 Cxy is almost pseudo-code.
 <pre>
-dijkstra(graph source):
-	q = Set()
-	dist = VertexMap()
+dijkstra(graph, source):
+	q = Set
+	dist = VertexMap
 	prev = dist
 	foreach vertex in graph:
 		dist[vertex] = inf

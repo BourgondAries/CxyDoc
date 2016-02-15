@@ -8,7 +8,7 @@ f(this=$g)
 
 <pre>
 # ut/Counter.cxy
-init(this max=1):
+new(this max=1):
 	this->cnt = 0
 	this->max = max
 

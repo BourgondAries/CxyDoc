@@ -10,13 +10,15 @@ enter():
 
 	# Similar to the above, but impossible to express in the language
 	c  # of type sub:Sub
-	c.assign(sub:Sub(10))
+	c = sub:Sub(100)
 
 </pre>
 <pre>
 # sub/Sub.cxy
-data = in
+new(this, in):
+	this->data = in
 
-=(this in):
+=(this, in):
 	# Copy-assignment
+	this->data = in->data
 </pre>
