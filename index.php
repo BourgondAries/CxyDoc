@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<style>
 			body { background-color: black; color: white; font-style: verdana, sans-serif; }
+			form { display: inline; }
 			input[type=submit] { width: 20%; }
 			select { width: 20%; }
 			pre { background-color: rgba(235, 236, 228, 0.2); padding: 1vh 1vw 1vh 1vw; }
@@ -39,7 +40,7 @@
 						$selected = ' selected';
 					else
 						$selected = '';
-					$html .= "<option$selected value=$i>$i</option>";
+					$html .= "<option$selected value=\"$i\">$i</option>";
 				}
 				return $html . '</select>';
 			}
@@ -65,7 +66,11 @@
 				echo '<form>';
 				echo createButton($prev5, !doesPageExist("$prev5"));
 				echo createButton($prev, !doesPageExist("$prev"));
+				echo "</form>";
+				echo '<form>';
 				echo createDropDownMenu($page, getFileCountInDirectory('pages/'));
+				echo "</form>";
+				echo '<form>';
 				echo createButton($next, !doesPageExist("$next"));
 				echo createButton($next5, !doesPageExist("$next5"));
 				echo "</form>";
