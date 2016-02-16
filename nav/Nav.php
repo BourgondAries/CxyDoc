@@ -19,16 +19,7 @@
 		return $result[0];
 	}
 	function createDropDownMenu($page, $to) {
-		return file_get_contents('autogen/navigation');
-		$html = '<select name="page" onchange="this.form.submit();">';
-		for ($i = 0; $i < $to; ++$i) {
-			if ($i == $page)
-				$selected = ' selected';
-			else
-				$selected = '';
-			$html .= "<option$selected value=\"$i\">$i</option>";
-		}
-		return $html . '</select>';
+		return rtrim(file_get_contents('autogen/navigation'));
 	}
 	function doesPageExist($page) {
 		return file_exists("pages/$page");
@@ -48,15 +39,13 @@
 		$page = intval($page);
 		$html = '';
 		$html .=  '<form>';
-		$html .=  createButton($prev5, !doesPageExist("$prev5"), '<<');
-		$html .=  createButton($prev, !doesPageExist("$prev"), '<');
+		$html .=  createButton($prev5, !doesPageExist("$prev5"), '&lt;&lt;');
+		$html .=  createButton($prev, !doesPageExist("$prev"), '&lt;');
 		$html .=  "</form>";
-		$html .=  '<form>';
 		$html .=  createDropDownMenu($page, getFileCountInDirectory('pages/'));
-		$html .=  "</form>";
 		$html .=  '<form>';
-		$html .=  createButton($next, !doesPageExist("$next"), '>');
-		$html .=  createButton($next5, !doesPageExist("$next5"), '>>');
+		$html .=  createButton($next, !doesPageExist("$next"), '&gt;');
+		$html .=  createButton($next5, !doesPageExist("$next5"), '&gt;&gt;');
 		$html .=  "</form>";
 		return $html;
 	}
