@@ -8,11 +8,13 @@
 			.content { margin: 1vh 1vw; }
 			.prefoot { min-height: 95vh; }
 			.vertical.space { height: 1vh; }
-			body { background-color: black; color: white; font-style: verdana, sans-serif; width: 100vw; }
+			body { background-color: black; color: #BBBBBB; font-family: sans-serif; letter-spacing: 2px; width: 100vw; }
+
 			form { display: inline; width: auto; }
 			button { background: #232b30; border: 1px solid #1c252b; color: #9fa8b0; font-weight: bold; height: 3vh; outline: 0; width: 20%; }
 			button:hover { color: #fff; background: #4C5A64; }
 			select { border: 1px solid #1c252b; display: inline; font-weight: bold; height: 3vh; margin-right: 0; width: 20%; }
+			p { line-height: 180%; width: 80vw; }
 			pre { background-color: rgba(235, 236, 228, 0.2); font-family: monospace; margin: 1vh 0 1vh 0; padding: 1vh 1vw 1vh 1vw; word-wrap: break-word; }
 			pre .line-number { float: left; margin: 0 1em 0 -1em; border-right: 1px solid; text-align: right; }
 			pre .line-number span { display: block; padding: 0 .5em 0 1em; }
