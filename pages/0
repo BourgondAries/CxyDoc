@@ -1,5 +1,10 @@
 Setup. First compilation.
-Put the following code in the file 'Main.cxy'
+<p>
+To begin programming in Cxy, create a text file and put the following code in the file 'Main.cxy'.
+</p>
+<p>
+Do not include the numbers to the left. They are line numbers.
+</p>
 <pre>
 # Cxy Tutorial
 print("Hello World")
@@ -20,6 +25,39 @@ Expected output:
 Hello World
 </pre>
 
+Let's dissect the program
+
+<pre>
+# Cxy Tutorial
+</pre>
+
+This line denotes a comment. All lines starting with # are comments. Comments are fully ignored by the compiler. You can write whatever you want in them.
+Comments end with new lines.
+
+<pre>
+print("Hello World")
+</pre>
+
+<p>
+The word print refers to a function called print.
+</p>
+<p>
+The stuff after a function name, within parentheses are called arguments.
+</p>
+<p>
+In this case, the argument to print is "Hello World".
+</p>
+<p>
+This prints the string "Hello World" to the standard output.
+<p>
+If you run it in the terminal you'll see the string in that terminal.
+</p>
+</p>
+<p>
+Print is widely used and is your first basic IO skill. Print will be used to check for the state of a program.
+</p>
+<p>
 If you have any trouble, check out the web. You should have cxyc installed on your
 computer. If the terminal complains that it can not find cxyc, and you actually did
 install it, then check if cxyc is added to PATH (search about PATH).
+</p>

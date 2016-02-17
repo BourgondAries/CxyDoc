@@ -1,5 +1,7 @@
-Variables. Declaration
+Variables. Declaration.
+<p>
 Variables are declared and defined when assigned
+</p>
 <pre>
 value = 10
 print(value)

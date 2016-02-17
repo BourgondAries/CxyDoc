@@ -2,9 +2,10 @@ Variables. Operations.
 
 <pre>
 value = 10
-print(value)
 value = value + 1
 print(value)
 </pre>
 
+<p>
 Variables are 'variable'; they 'vary'. Most mathematical operators are supported, go try out multiplication and division.
+</p>
